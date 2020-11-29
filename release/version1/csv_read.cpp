@@ -19,7 +19,7 @@ int csv_read(ifstream &data_file, Record data[], int n)
         {
             break;
         }
-        cout << "debug:" << i << endl;
+        //cout << "debug:" << i << endl;
         char *p = strtok(tmp_buf, ",");
         data[i].a = atoi(p);
         p = strtok(NULL, ",");
