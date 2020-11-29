@@ -18,6 +18,7 @@ int sort(Record data[], int start, int end)
                 data[j] = tmp;
                 break;
             }
+            j--;
         }
         if (i == j)
         {
