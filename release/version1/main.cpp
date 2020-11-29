@@ -1,7 +1,7 @@
-#include "../csv_read.h"
-#include "../limits.h"
-#include "../type.h"
-#include "../quick_sort.h"
+#include "csv_read.h"
+#include "limits.h"
+#include "type.h"
+#include "quick_sort.h"
 #include <iostream>
 #include <fstream>
 #include <string>
