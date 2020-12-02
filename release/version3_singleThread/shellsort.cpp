@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include "type.h"
 using namespace std;
-static int thread_num = 4; //core+2
+static int thread_num = 0; //core+2
 struct Params
 {
     Record *data;
@@ -48,21 +48,44 @@ void *insert_sort(void *args)
 }
 void shell_sort(Record *data, int n)
 {
-    int step;
     pthread_t workers[thread_num];
-    Params *params[thread_num + 1];
-    for (step = 1; step <= thread_num; step++)
+    Params *params[thread_num + 50];
+    int numer = 0;
+    for (int j = 10; j >= 3; j -= 3)
     {
-        params[step - 1] = new Params(data, n, step);
-        pthread_create(&workers[step - 1], NULL, insert_sort, params[step - 1]);
+        if (numer < thread_num)
+        {
+            params[numer] = new Params(data, n, j * 5);
+            pthread_create(&workers[numer], NULL, insert_sort, params[numer]);
+        }
+        else
+        {
+            params[numer] = new Params(data, n, j * 5);
+            insert_sort(params[numer]);
+        }
+        numer++;
+    }
+    for (int j = 8; j >= 2; j -= 3)
+    {
+        if (numer < thread_num)
+        {
+            params[numer] = new Params(data, n, j);
+            pthread_create(&workers[numer], NULL, insert_sort, params[numer]);
+        }
+        else
+        {
+            params[numer] = new Params(data, n, j * 5);
+            insert_sort(params[numer]);
+        }
+        numer++;
     }
     for (int i = 0; i < thread_num; i++)
     {
         pthread_join(workers[i], NULL);
     }
-    params[thread_num] = new Params(data, n, 1);
-    insert_sort(params[thread_num]);
-    for (int i = 0; i < thread_num; i++)
+    params[numer] = new Params(data, n, 1);
+    insert_sort(params[numer]);
+    for (int i = 0; i <= numer; i++)
     {
         delete params[i];
     }
