@@ -2,7 +2,7 @@ all:main
 .PHONY:test clean
 CFILES:=$(wildcard *.cpp)
 OBJS:=$(patsubst %.cpp,%.o,$(CFILES))
-FLAGS:=-O3 -Wall -std=c++11
+FLAGS:=-O3 -Wall -std=c++11 -lpthread
 ifdef DEBUG
 FLAGS+=-g
 endif

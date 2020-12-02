@@ -1,4 +1,4 @@
 #ifndef _LIMIT
 #define _LIMIT
-#define ARR_LEN 100000
+#define ARR_LEN 1000000
 #endif

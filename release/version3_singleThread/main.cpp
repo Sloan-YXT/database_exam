@@ -10,10 +10,11 @@ Record data[ARR_LEN];
 int main(void)
 {
     clock_t start, end;
-    start = clock();
+
     ifstream csv_file("../../interview/x100.csv", ios_base::in);
     csv_file.exceptions(ios_base::badbit);
     csv_read(csv_file, data, ARR_LEN);
+    start = clock();
     shell_sort(data, ARR_LEN);
     csv_file.close();
     end = clock();
