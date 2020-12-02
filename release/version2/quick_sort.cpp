@@ -12,14 +12,12 @@ int sort(Record data[], int start, int end)
         {
             if (EVAL(data[j]) < EVAL(data[start]))
             {
-                data[i].exchange(data[j]);
                 break;
             }
             j--;
         }
         if (i == j)
         {
-            data[i].exchange(data[start]);
             break;
         }
         while (i < j)
@@ -36,6 +34,7 @@ int sort(Record data[], int start, int end)
             break;
         }
     }
+    data[i].exchange(data[start]);
     return i;
 }
 void quick_sort(Record data[], int start, int end)

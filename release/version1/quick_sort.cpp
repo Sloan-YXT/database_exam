@@ -13,18 +13,13 @@ int sort(Record data[], int start, int end)
         {
             if (EVAL(data[j]) < EVAL(standard))
             {
-                tmp = data[i];
-                data[i] = data[j];
-                data[j] = tmp;
                 break;
             }
             j--;
         }
         if (i == j)
         {
-            tmp = data[i];
-            data[i] = standard;
-            data[start] = tmp;
+
             break;
         }
         while (i < j)
@@ -43,6 +38,9 @@ int sort(Record data[], int start, int end)
             break;
         }
     }
+    tmp = data[i];
+    data[i] = standard;
+    data[start] = tmp;
     return i;
 }
 void quick_sort(Record data[], int start, int end)
