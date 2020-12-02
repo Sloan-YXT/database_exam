@@ -27,6 +27,7 @@ void *insert_sort(void *args)
     int step = ((Params *)args)->step;
     int i, j;
     Record watcher;
+    //cout << "step" << step << endl;
     for (j = 2 * step - 1; j < n; j += step)
     {
         watcher = data[j];
@@ -53,7 +54,11 @@ void shell_sort(Record *data, int n)
     for (step = 1; step <= thread_num; step++)
     {
         params[step - 1] = new Params(data, n, step);
-        pthread_create(&workers[step - 1], NULL, insert_sort, params);
+        pthread_create(&workers[step - 1], NULL, insert_sort, params[step - 1]);
+    }
+    for (int i = 0; i < thread_num; i++)
+    {
+        pthread_join(workers[i], NULL);
     }
     for (int i = 0; i < thread_num; i++)
     {
