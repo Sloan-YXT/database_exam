@@ -1,7 +1,18 @@
 #include "quick_sort.h"
 #include <iostream>
 #include "type.h"
-#define EVAL(record) (record.a * 100000 + record.b)
+struct Args
+{
+    Record *data;
+    int start;
+    int end;
+};
+void *sort_thread(void *args)
+{
+    Record *data = ((Args *)args)->data;
+    int start = ((Args *)args)->start;
+    int end = ((Args *)args)->end;
+}
 int sort(Record data[], int start, int end)
 {
     Record tmp;
@@ -10,7 +21,7 @@ int sort(Record data[], int start, int end)
     {
         while (j > i)
         {
-            if (EVAL(data[j]) < EVAL(data[start]))
+            if ((data[j].a < data[start].a) || (data[j].a == data[start].a && data[j].b < data[start].b))
             {
                 break;
             }
@@ -22,7 +33,7 @@ int sort(Record data[], int start, int end)
         }
         while (i < j)
         {
-            if (EVAL(data[i]) > EVAL(data[start]))
+            if ((data[i].a > data[start].a) || (data[i].a == data[start].a && data[i].b > data[start].b))
             {
                 data[i].exchange(data[j]);
                 break;

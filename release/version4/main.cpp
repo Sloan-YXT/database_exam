@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <unistd.h>
 using namespace std;
 Record data[ARR_LEN];
 int main(void)
@@ -27,4 +28,6 @@ int main(void)
         res << data[i].a << "," << data[i].b << endl;
     }
     res.close();
+    sleep(5);
+    //see how much memory we consume;
 }
