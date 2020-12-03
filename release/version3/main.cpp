@@ -25,7 +25,8 @@ int main(void)
     ofstream res("result.txt", ios_base::out | ios_base::trunc);
     for (int i = 0; i < ARR_LEN; i++)
     {
-        res << data[i].a << "," << data[i].b << "," << (void *)data[i].text << endl;
+        if (data[i].b < 10000)
+            res << data[i].a << "," << data[i].b << "," << data[i].text << endl;
     }
     res.close();
 }

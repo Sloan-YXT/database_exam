@@ -33,8 +33,10 @@ Record::~Record()
 }
 Record &Record::operator=(const Record &another)
 {
+    pthread_mutex_lock(&lock);
     a = another.a;
     b = another.b;
     memcpy(text, another.text, 1024);
+    pthread_mutex_unlock(&lock);
     return *this;
 }
