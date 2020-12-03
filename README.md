@@ -8,104 +8,103 @@
 
 ## 目录结构
 
-`.
-├── debug
-├── interview
-│   ├── gendata.c
-│   └── Makefile
-├── mem_save_1
-│   ├── csv_read.c
-│   ├── csv_read.h
-│   ├── csv_read.o
-│   ├── limits.h
-│   ├── main
-│   ├── main.c
-│   ├── main.dis
-│   ├── main.h.dis
-│   ├── main.o
-│   ├── makefile
-│   ├── quick_sort.c
-│   ├── quick_sort.h
-│   ├── quick_sort.o
-│   ├── type.c
-│   ├── type.h
-│   └── type.o
-├── photos
-│   ├── a1.png
-│   ├── a2.png
-│   ├── image-20201203155737850.png
-│   ├── image-20201203155738825.png
-│   ├── image-20201203162655069.png
-│   ├── image-20201203165059509.png
-│   ├── image-20201203165221904.png
-│   ├── image-20201203165236006.png
-│   ├── image-20201203170751324.png
-│   └── \345\233\233\347\273\264\347\272\265\346\250\252.png
-├── README.md
-├── release
-│   ├── version1
-│   │   ├── csv_read.cpp
-│   │   ├── csv_read.h
-│   │   ├── limits.h
-│   │   ├── main.cpp
-│   │   ├── makefile
-│   │   ├── quick_sort.cpp
-│   │   ├── quick_sort.h
-│   │   └── type.h
-│   ├── version2
-│   │   ├── csv_read.cpp
-│   │   ├── csv_read.h
-│   │   ├── limits.h
-│   │   ├── main.cpp
-│   │   ├── makefile
-│   │   ├── quick_sort.cpp
-│   │   ├── quick_sort.h
-│   │   ├── type.cpp
-│   │   └── type.h
-│   ├── version3
-│   │   ├── csv_read.cpp
-│   │   ├── csv_read.h
-│   │   ├── main.cpp
-│   │   ├── makefile
-│   │   ├── shellsort.cpp
-│   │   ├── shell_sort.h
-│   │   ├── type.cpp
-│   │   └── type.h
-│   ├── version3_alter
-│   │   ├── csv_read.cpp
-│   │   ├── csv_read.h
-│   │   ├── main.cpp
-│   │   ├── makefile
-│   │   ├── shellsort.cpp
-│   │   ├── shell_sort.h
-│   │   ├── type.cpp
-│   │   └── type.h
-│   ├── version3_singleThread
-│   │   ├── csv_read.cpp
-│   │   ├── csv_read.h
-│   │   ├── main.cpp
-│   │   ├── makefile
-│   │   ├── shellsort.cpp
-│   │   ├── shell_sort.h
-│   │   ├── type.cpp
-│   │   └── type.h
-│   └── version4
-│       ├── csv_read.cpp
-│       ├── csv_read.h
-│       ├── limits.h
-│       ├── main.cpp
-│       ├── makefile
-│       ├── quick_sort.cpp
-│       ├── quick_sort.h
-│       ├── type.cpp
-│       └── type.h
-└── test
-    ├── csv_read_test.cpp
-    ├── makefile
-    └── quick_sort_test.cpp`
+.
+├── debug </br>
+├── interview </br>
+│   ├── gendata.c </br>
+│   └── Makefile </br>
+├── mem_save_1</br>
+│   ├── csv_read.c</br>
+│   ├── csv_read.h</br>
+│   ├── csv_read.o</br>
+│   ├── limits.h</br>
+│   ├── main</br>
+│   ├── main.c</br>
+│   ├── main.dis</br>
+│   ├── main.h.dis</br>
+│   ├── main.o</br>
+│   ├── makefile</br>
+│   ├── quick_sort.c</br>
+│   ├── quick_sort.h</br>
+│   ├── quick_sort.o</br>
+│   ├── type.c</br>
+│   ├── type.h</br>
+│   └── type.o</br>
+├── photos</br>
+│   ├── a1.png</br>
+│   ├── a2.png</br>
+│   ├── image-20201203155737850.png</br>
+│   ├── image-20201203155738825.png</br>
+│   ├── image-20201203162655069.png</br>
+│   ├── image-20201203165059509.png</br>
+│   ├── image-20201203165221904.png</br>
+│   ├── image-20201203165236006.png</br>
+│   ├── image-20201203170751324.png</br>
+│   └── \345\233\233\347\273\264\347\272\265\346\250\252.png</br>
+├── README.md</br>
+├── release</br>
+│   ├── version1</br>
+│   │   ├── csv_read.cpp</br>
+│   │   ├── csv_read.h</br>
+│   │   ├── limits.h</br>
+│   │   ├── main.cpp</br>
+│   │   ├── makefile</br>
+│   │   ├── quick_sort.cpp</br>
+│   │   ├── quick_sort.h</br>
+│   │   └── type.h</br>
+│   ├── version2</br>
+│   │   ├── csv_read.cpp</br>
+│   │   ├── csv_read.h</br>
+│   │   ├── limits.h</br>
+│   │   ├── main.cpp</br>
+│   │   ├── makefile</br>
+│   │   ├── quick_sort.cpp</br>
+│   │   ├── quick_sort.h</br>
+│   │   ├── type.cpp</br>
+│   │   └── type.h</br>
+│   ├── version3</br>
+│   │   ├── csv_read.cpp</br>
+│   │   ├── csv_read.h</br>
+│   │   ├── main.cpp</br>
+│   │   ├── makefile</br>
+│   │   ├── shellsort.cpp</br>
+│   │   ├── shell_sort.h</br>
+│   │   ├── type.cpp</br>
+│   │   └── type.h</br>
+│   ├── version3_alter</br>
+│   │   ├── csv_read.cpp</br>
+│   │   ├── csv_read.h</br>
+│   │   ├── main.cpp</br>
+│   │   ├── makefile</br>
+│   │   ├── shellsort.cpp</br>
+│   │   ├── shell_sort.h</br>
+│   │   ├── type.cpp</br>
+│   │   └── type.h</br>
+│   ├── version3_singleThread</br>
+│   │   ├── csv_read.cpp</br>
+│   │   ├── csv_read.h</br>
+│   │   ├── main.cpp</br>
+│   │   ├── makefile</br>
+│   │   ├── shellsort.cpp</br>
+│   │   ├── shell_sort.h</br>
+│   │   ├── type.cpp</br>
+│   │   └── type.h</br>
+│   └── version4</br>
+│       ├── csv_read.cpp  
+│       ├── csv_read.h  
+│       ├── limits.h  
+│       ├── main.cpp  
+│       ├── makefile  
+│       ├── quick_sort.cpp  
+│       ├── quick_sort.h  
+│       ├── type.cpp  
+│       └── type.h  
+└── test  
+    ├── csv_read_test.cpp  
+    ├── makefile  
+    └── quick_sort_test.cpp  </br>
 
-
-debug目录存放debug版本，发布时已删除；release目录发布release版本，其中version1是最开始的快排，version2是改进后的快排,version3是多线程希尔排序，version4是多线程快排,version3_singleThread是单线程改进希尔排序,version3_alter是多线程改进希尔排序，目录具体内容在下面介绍。
+​		debug目录存放debug版本，发布时已删除；release目录发布release版本，其中version1是最开始的快排，version2是改进后的快排,version3是多线程希尔排序，version4是多线程快排,version3_singleThread是单线程改进希尔排序,version3_alter是多线程改进希尔排序，目录具体内容在下面介绍。
 
 mem_save_1实现的是内存小于1M的代码。
 
