@@ -8,17 +8,11 @@
 
 ## 目录结构
 
-.
+`.
 ├── debug
 ├── interview
-│   ├── gendata
 │   ├── gendata.c
-│   ├── gendata.o
-│   ├── Makefile
-│   ├── x1000.csv
-│   ├── x100.csv
-│   ├── x10.csv
-│   └── x1.csv
+│   └── Makefile
 ├── mem_save_1
 │   ├── csv_read.c
 │   ├── csv_read.h
@@ -36,111 +30,86 @@
 │   ├── type.c
 │   ├── type.h
 │   └── type.o
+├── photos
+│   ├── a1.png
+│   ├── a2.png
+│   ├── image-20201203155737850.png
+│   ├── image-20201203155738825.png
+│   ├── image-20201203162655069.png
+│   ├── image-20201203165059509.png
+│   ├── image-20201203165221904.png
+│   ├── image-20201203165236006.png
+│   ├── image-20201203170751324.png
+│   └── \345\233\233\347\273\264\347\272\265\346\250\252.png
 ├── README.md
 ├── release
 │   ├── version1
 │   │   ├── csv_read.cpp
 │   │   ├── csv_read.h
-│   │   ├── csv_read.o
 │   │   ├── limits.h
-│   │   ├── main
 │   │   ├── main.cpp
-│   │   ├── main.o
 │   │   ├── makefile
 │   │   ├── quick_sort.cpp
 │   │   ├── quick_sort.h
-│   │   ├── quick_sort.o
 │   │   └── type.h
 │   ├── version2
 │   │   ├── csv_read.cpp
 │   │   ├── csv_read.h
-│   │   ├── csv_read.o
 │   │   ├── limits.h
-│   │   ├── main
 │   │   ├── main.cpp
-│   │   ├── main.dis
-│   │   ├── main.h.dis
-│   │   ├── main.o
 │   │   ├── makefile
 │   │   ├── quick_sort.cpp
 │   │   ├── quick_sort.h
-│   │   ├── quick_sort.o
 │   │   ├── type.cpp
-│   │   ├── type.h
-│   │   └── type.o
+│   │   └── type.h
 │   ├── version3
 │   │   ├── csv_read.cpp
 │   │   ├── csv_read.h
-│   │   ├── csv_read.o
-│   │   ├── main
 │   │   ├── main.cpp
-│   │   ├── main.o
 │   │   ├── makefile
 │   │   ├── shellsort.cpp
 │   │   ├── shell_sort.h
-│   │   ├── shellsort.o
 │   │   ├── type.cpp
-│   │   ├── type.h
-│   │   └── type.o
+│   │   └── type.h
 │   ├── version3_alter
 │   │   ├── csv_read.cpp
 │   │   ├── csv_read.h
-│   │   ├── csv_read.o
-│   │   ├── main
 │   │   ├── main.cpp
-│   │   ├── main.o
 │   │   ├── makefile
 │   │   ├── shellsort.cpp
 │   │   ├── shell_sort.h
-│   │   ├── shellsort.o
 │   │   ├── type.cpp
-│   │   ├── type.h
-│   │   └── type.o
+│   │   └── type.h
 │   ├── version3_singleThread
 │   │   ├── csv_read.cpp
 │   │   ├── csv_read.h
-│   │   ├── csv_read.o
-│   │   ├── main
 │   │   ├── main.cpp
-│   │   ├── main.o
 │   │   ├── makefile
-│   │   ├── result.txt
 │   │   ├── shellsort.cpp
 │   │   ├── shell_sort.h
-│   │   ├── shellsort.o
 │   │   ├── type.cpp
-│   │   ├── type.h
-│   │   └── type.o
+│   │   └── type.h
 │   └── version4
 │       ├── csv_read.cpp
 │       ├── csv_read.h
-│       ├── csv_read.o
 │       ├── limits.h
-│       ├── main
 │       ├── main.cpp
-│       ├── main.dis
-│       ├── main.h.dis
-│       ├── main.o
 │       ├── makefile
 │       ├── quick_sort.cpp
 │       ├── quick_sort.h
-│       ├── quick_sort.o
 │       ├── type.cpp
-│       ├── type.h
-│       └── type.o
+│       └── type.h
 └── test
-    ├── csv_read_test
     ├── csv_read_test.cpp
-    ├── csv_read_test.o
     ├── makefile
-    ├── quick_sort_test
-    ├── quick_sort_test.cpp
-    ├── quick_sort_test.o
-    └── shell_sort_test.cpp
+    └── quick_sort_test.cpp`
+
 
 debug目录存放debug版本，发布时已删除；release目录发布release版本，其中version1是最开始的快排，version2是改进后的快排,version3是多线程希尔排序，version4是多线程快排,version3_singleThread是单线程改进希尔排序,version3_alter是多线程改进希尔排序，目录具体内容在下面介绍。
 
 mem_save_1实现的是内存小于1M的代码。
+
+photos存储本文档使用的图片。
 
 ## 题目要求分析
 
