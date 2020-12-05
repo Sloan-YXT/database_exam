@@ -1,4 +1,4 @@
-all:csv_read_test quick_sort_test clean
+all:csv_read_test quick_sort_test 
 .PHONY:all clean
 csv_read_test:csv_read_test.o ../release/version1/csv_read.o ../release/version1/*.h
 	g++ $^ -o $@

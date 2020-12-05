@@ -32,21 +32,21 @@ void Record::exchange(Record &new_obj)
     new_obj.b = b1;
     new_obj.text = tmp;
 }
-Record &Record::operator=(Record &new_obj)
-{
-    a = new_obj.a;
-    b = new_obj.b;
-    memcpy(text, new_obj.text, 1024);
-    return *this;
-}
-Record &Record::operator=(Record &&new_obj)
-{
-    a = new_obj.a;
-    b = new_obj.b;
-    memcpy(text, new_obj.text, 1024);
-    new_obj.text = nullptr;
-    return *this;
-}
+// Record &Record::operator=(Record &new_obj)
+// {
+//     a = new_obj.a;
+//     b = new_obj.b;
+//     memcpy(text, new_obj.text, 1024);
+//     return *this;
+// }
+// Record &Record::operator=(Record &&new_obj)
+// {
+//     a = new_obj.a;
+//     b = new_obj.b;
+//     memcpy(text, new_obj.text, 1024);
+//     new_obj.text = nullptr;
+//     return *this;
+// }
 Record::~Record()
 {
     delete[] text;

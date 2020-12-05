@@ -11,7 +11,7 @@ int main(void)
 {
     clock_t start, end;
 
-    ifstream csv_file("../../interview/x100.csv", ios_base::in);
+    ifstream csv_file("../../interview/x1000.csv", ios_base::in);
     csv_file.exceptions(ios_base::badbit);
     csv_read(csv_file, data, ARR_LEN);
     start = clock();
